@@ -3,12 +3,10 @@ This step is only needed the first time you run the application in order
 to create the SQLite3 database file (this will be stored in the app folder).
 *********
   Still from the project directory, perform the following:
-  - Start python interpreter by typing:     python3
+  - Start python interpreter by typing:     flask shell
   - At the python prompt type (>>>), run following Python statement in
     sequence:
-          from app import app, db
-          from dotenv import load_dotenv
-          load_dotenv('flaskenv')
+          from app import db
           db.create_all()
           quit()    # this takes you back to the terminal prompt
 
